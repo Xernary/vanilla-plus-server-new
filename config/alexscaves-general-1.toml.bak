@@ -1,0 +1,55 @@
+item-behavior = {}
+
+[generation]
+	#Average radius (in blocks) of an Alex's Caves cave biome.
+	#Range: 10.0 ~ 1.7976931348623157E308
+	cave_biome_mean_width = 300.0
+	#Average separation (in blocks) between each Alex's Caves cave biome.
+	#Range: > 50
+	cave_biome_mean_separation = 900
+	#How irregularly shaped Alex's Caves cave biomes can generate. 0 = all biomes nearly circular. 1 = biomes completely squiggly in shape.
+	#Range: 0.0 ~ 1.0
+	cave_biome_width_randomness = 0.15
+	#Average spacing in between Alex's Caves cave biomes. 0 = all biomes nearly perfectly equidistant. 1 = biomes completely randomly spread out, sometimes next to eachother.
+	#Range: 0.0 ~ 1.0
+	cave_biome_spacing_randomness = 0.45
+	#Whether to warn users when a server starts if an incompatible generation mod is detected.
+	warn_generation_incompatibility = true
+
+[mob-spawning]
+	#Cave Creatures (All dinosaurs, raycats, etc) spawn at this frequency. Their cap is calculated by multiplying this number with the default mob cap for surface animals.
+	#Range: 0.0 ~ 10.0
+	cave_creature_spawn_count_modifier = 1.75
+
+[mob-behavior]
+	#How many cpu cores big mobs(tremorzilla, atlatitan, grottoceratops etc) should utilize when pathing. Bigger number = less impact on TPS
+	#Range: 1 ~ 100
+	pathfinding_threads = 5
+	#Chance that blocks destroyed by luxtructosaurus attacks drop themselves, if mob griefing is enabled.
+	#Range: 0.0 ~ 1.0
+	luxtructosaurus_block_drop_chance = 0.75
+	#The maximum explosion resistance that a block can have to be destroyed by an atlatitan stomp. Set to zero to disable all atlatitan block breaking.
+	#Range: > 0
+	atlatitan_max_block_explosion_resistance = 10
+	#How long (in game ticks) it takes for a nucleeper to explode.
+	#Range: > 20
+	nucleeper_fuse_time = 300
+	#True if the Tremorzilla beam breaks even more blocks.
+	devastating_tremorzilla_beam = true
+	#Whether the Watcher can take control of the camera.
+	watcher_possession = true
+	#How long (in game ticks) between watcher possession attempts.
+	#Range: 20 ~ 24000
+	watcher_possession_cooldown = 300
+
+[block-behavior]
+	#True if players wearing boots can walk on any scarlet neodymium surface.
+	walking_on_magnets = true
+	#How long (in game ticks) it usually takes for an amber monolith to spawn an animal.
+	#Range: > 1000
+	amber_monolith_mean_time = 32000
+	#True if the Nuclear Furnace only uses 'Blasting' recipes, false to use all smelting recipes.
+	nuclear_furnace_blasting_only = true
+	#True if the Nuclear Furnace should only use recipes using the `alexscaves:nuclear_furnace` recipe type, false to use regular behavior.
+	nuclear_furnace_custom_type = false
+
